@@ -1,7 +1,7 @@
  import fs from "fs";
  import express from "express";
  const app=express();
- const PORT=4000;
+ const PORT=process.env.PORT;
  var fileList=[];
  app.get("/files", function(request,response){          //GET request for API endpoint for creating a file 
   let {time,file}=TimeStamp();
