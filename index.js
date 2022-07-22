@@ -33,7 +33,7 @@
     var file = day+"-"+month+"-"+year+"_"+hours+"_"+minutes+"_"+seconds;   //to give file name
     return {time,file};
      }
-     const urlDetails="Heroku URL for creating a file-https://krittika-nodejs-filesystem.herokuapp.com/files "+"\n"+"Heroku URL for retrieving text files created in a folder-https://krittika-nodejs-filesystem.herokuapp.com/filelist "+"\n"+"Github repository link-https://github.com/KRITTIKA0422/nodejs-filesystem"+"\n"+"Last committed hash ID-Code finalized ";
+     const urlDetails="Heroku URL for creating a file-https://krittika-nodejs-filesystem.herokuapp.com/files "+"\n"+"Heroku URL for retrieving text files created in a folder-https://krittika-nodejs-filesystem.herokuapp.com/filelist "+"\n"+"Github repository link-https://github.com/KRITTIKA0422/nodejs-filesystem"+"\n"+"Last committed hash ID-final code ";
     fs.writeFile("./detail.txt",urlDetails,(err)=> {          //creating file having heroku url, github repository, last committed hash id
     console.log("Details of url are written");
      });
