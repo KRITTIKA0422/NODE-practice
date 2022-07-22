@@ -3,7 +3,7 @@
  import dotenv from "dotenv";
  dotenv.config();
  const app=express();
- const PORT=process.env.PORT;
+ const PORT=process.env.PORT;                        //value of PORT taken from .env file       
  var fileList=[];
  app.get("/files", function(request,response){          //GET request for API endpoint for creating a file 
   let {time,file}=TimeStamp();
@@ -33,8 +33,8 @@
     var file = day+"-"+month+"-"+year+"_"+hours+"_"+minutes+"_"+seconds;   //to give file name
     return {time,file};
      }
-     const urlDetails="Heroku URL for creating a file- "+"\n"+"Heroku URL for retrieving text files created in a folder- "+"\n"+"Github repository link-https://github.com/KRITTIKA0422/nodejs-filesystem"+"\n"+"Last committed hash ID- ";
-    fs.writeFile("./details.txt",urlDetails,(err)=> {          //creating file having heroku url, github repository, last committed hash id
+     const urlDetails="Heroku URL for creating a file-https://krittika-nodejs-filesystem.herokuapp.com/files "+"\n"+"Heroku URL for retrieving text files created in a folder-https://krittika-nodejs-filesystem.herokuapp.com/filelist "+"\n"+"Github repository link-https://github.com/KRITTIKA0422/nodejs-filesystem"+"\n"+"Last committed hash ID-Code finalized ";
+    fs.writeFile("./detail.txt",urlDetails,(err)=> {          //creating file having heroku url, github repository, last committed hash id
     console.log("Details of url are written");
      });
 app.listen(PORT,()=>console.log(`App started in ${PORT}`));

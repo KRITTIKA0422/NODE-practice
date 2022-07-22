@@ -1,4 +1,0 @@
-Heroku URL for creating a file- 
-Heroku URL for retrieving text files created in a folder- 
-Github repository link-https://github.com/KRITTIKA0422/nodejs-filesystem
-Last committed hash ID- 
